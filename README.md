@@ -3,5 +3,5 @@
 
 > **Nome do cliente:** Kamila Dias da Silva  
  **Equipe:** Igor Cezar, Valdir Dias, Saú Cesar  
- **Disciplina:** Engenharia de Software 2019.1
+ **Disciplina:** Engenharia de Software 2019.1  
  **Professor:** Rodrigo Andrade
