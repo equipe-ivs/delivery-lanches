@@ -1,0 +1,13 @@
+source "https://rubygems.org"
+
+group :development, :test do
+ # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
+  gem 'cucumber', '~> 3.1.0'
+  gem 'rspec', '~> 3.7.0'
+  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions
+  gem 'database_cleaner'
+  gem 'launchy'
+end
