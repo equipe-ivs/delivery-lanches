@@ -17,7 +17,7 @@ class VendasControllerTest < ActionDispatch::IntegrationTest
 
   test "should create venda" do
     assert_difference('Venda.count') do
-      post vendas_url, params: { venda: { id: @venda.id, quantidade: @venda.quantidade, valorTotal: @venda.valorTotal } }
+      post vendas_url, params: { venda: { cliente: @venda.cliente, produto: @venda.produto, quantidade: @venda.quantidade, valorTotal: @venda.valorTotal } }
     end
 
     assert_redirected_to venda_url(Venda.last)
@@ -34,7 +34,7 @@ class VendasControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update venda" do
-    patch venda_url(@venda), params: { venda: { id: @venda.id, quantidade: @venda.quantidade, valorTotal: @venda.valorTotal } }
+    patch venda_url(@venda), params: { venda: { cliente: @venda.cliente, produto: @venda.produto, quantidade: @venda.quantidade, valorTotal: @venda.valorTotal } }
     assert_redirected_to venda_url(@venda)
   end
 

@@ -5,9 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Id</th>
+      <th>Produto</th>
+      <th>Cliente</th>
       <th>Quantidade</th>
-      <th>Valor Total</th>
+      <th>Valortotal</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,7 +16,8 @@
   <tbody>
     <% @vendas.each do |venda| %>
       <tr>
-        <td><%= venda.id %></td>
+        <td><%= venda.produto %></td>
+        <td><%= venda.cliente %></td>
         <td><%= venda.quantidade %></td>
         <td><%= venda.valorTotal %></td>
         <td><%= link_to 'Show', venda %></td>
