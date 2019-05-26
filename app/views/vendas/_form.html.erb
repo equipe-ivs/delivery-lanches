@@ -12,13 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :id %>
-    <%= form.number_field :id, id: :venda_id %>
+    <%= form.label :produto %>
+    <%= form.text_field :produto, id: :venda_produto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cliente %>
+    <%= form.text_field :cliente, id: :venda_cliente %>
   </div>
 
   <div class="field">
     <%= form.label :quantidade %>
-    <%= form.number_field :quantidade, id: :venda_quantidade %>
+    <%= form.text_field :quantidade, id: :venda_quantidade %>
   </div>
 
   <div class="field">

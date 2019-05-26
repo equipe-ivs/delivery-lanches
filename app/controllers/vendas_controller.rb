@@ -27,7 +27,7 @@ class VendasController < ApplicationController
     @venda = Venda.new(venda_params)
 
     respond_to do |format|
-      if @venda.save!
+      if @venda.save
         format.html { redirect_to @venda, notice: 'Venda was successfully created.' }
         format.json { render :show, status: :created, location: @venda }
       else
@@ -69,6 +69,6 @@ class VendasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def venda_params
-      params.require(:venda).permit(:id, :quantidade, :valorTotal)
+      params.require(:venda).permit(:produto, :cliente, :quantidade, :valorTotal)
     end
 end
