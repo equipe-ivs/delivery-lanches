@@ -1,0 +1,97 @@
+<%= form_with(model: cliente, local: true) do |form| %>
+  <% if cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+
+      <ul>
+      <% cliente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :cliente_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :cliente_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cpf %>
+    <%= form.text_field :cpf, id: :cliente_cpf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :cliente_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endereco %>
+    <%= form.text_field :endereco, id: :cliente_endereco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :cliente_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bairro %>
+    <%= form.text_field :bairro, id: :cliente_bairro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :cliente_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cidade %>
+    <%= form.text_field :cidade, id: :cliente_cidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :cliente_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estado %>
+    <%= form.text_field :estado, id: :cliente_estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :cliente_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pontoDeReferencia %>
+    <%= form.text_field :pontoDeReferencia, id: :cliente_pontoDeReferencia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :cliente_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, id: :cliente_telefone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :cliente_string %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
