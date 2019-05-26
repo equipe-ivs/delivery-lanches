@@ -1,8 +1,11 @@
 class CreateVendas < ActiveRecord::Migration[5.1]
   def change
     create_table :vendas do |t|
-      t.integer :quantidade
-      t.decimal :valorTotal
+      t.string :produto
+      t.string :cliente
+      t.string :quantidade
+      t.string :valorTotal
+
       t.timestamps
     end
   end
