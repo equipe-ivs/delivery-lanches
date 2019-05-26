@@ -28,4 +28,3 @@ Feature: CRUD Vendas
 		Given Eu estou na tela de vendas
 		When Eu clico no botao destroy da venda de id "id"
 		Then Eu vejo que a venda e excluida corretamente
-
