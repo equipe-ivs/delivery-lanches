@@ -27,7 +27,7 @@ class VendasController < ApplicationController
     @venda = Venda.new(venda_params)
 
     respond_to do |format|
-      if @venda.save
+      if @venda.save!
         format.html { redirect_to @venda, notice: 'Venda was successfully created.' }
         format.json { render :show, status: :created, location: @venda }
       else
