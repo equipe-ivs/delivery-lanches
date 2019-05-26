@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  descricao: MyString
+  precoCompra: 9.99
+  precoVenda: 9.99
+
+two:
+  id: 1
+  descricao: MyString
+  precoCompra: 9.99
+  precoVenda: 9.99
