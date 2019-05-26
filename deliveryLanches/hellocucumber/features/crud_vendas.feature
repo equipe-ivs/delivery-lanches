@@ -6,14 +6,14 @@ Feature: CRUD Vendas
 	Scenario: Criando venda corretamente
 		Given Eu estou na tela de vendas
 		And Eu clico no botao de nova venda
-		When Eu adiciona o id "ID" do produto e a quantidade "x"
+		When Eu adiciono o id "ID" do produto e a quantidade "x"
 		And Eu clico no botao salvar venda
 		Then Eu vejo que a venda e criada corretamente
 
 	Scenario: Criar venda com quantidade invalida
 		Given Eu estou na tela de vendas
 		And Eu clico no botao nova venda
-		When Eu adiciona o id "ID" do produto e a quantidade com valor "x"
+		When Eu adiciono o id "ID" do produto e a quantidade com valor "x"
 		And Eu clico no botao salvar venda
 		Then Eu vejo a mensagem de erro informando que a quantidade do produto e invalida
 

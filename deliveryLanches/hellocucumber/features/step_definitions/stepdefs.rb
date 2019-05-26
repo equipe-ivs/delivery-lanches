@@ -4,7 +4,7 @@ end
 And ("Eu clico no botao de nova venda") do
 end
 
-When ("Eu adiciona o id {ID} do produto e a quantidade {x}") do
+When ("Eu adiciono o id {ID} do produto e a quantidade {x}") do
 end
 
 And ("Eu clico no botao salvar venda") do
