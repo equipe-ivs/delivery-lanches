@@ -17,7 +17,9 @@
       <tr>
         <td><%= venda.id %></td>
         <td><%= venda.quantidade %></td>
+        <td><%= venda.idProduto %></td>
         <td><%= venda.valorTotal %></td>
+
         <td><%= link_to 'Show', venda %></td>
         <td><%= link_to 'Edit', edit_venda_path(venda) %></td>
         <td><%= link_to 'Destroy', venda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
