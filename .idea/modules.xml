@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/delivery-lanches.iml" filepath="$PROJECT_DIR$/.idea/delivery-lanches.iml" />
+<<<<<<< HEAD
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hellocucumber.iml" filepath="$PROJECT_DIR$/.idea/modules/hellocucumber.iml" />
+>>>>>>> remotes/repositoriop/master
     </modules>
   </component>
 </project>
