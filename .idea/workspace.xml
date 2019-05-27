@@ -2,8 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405fa7f6-7e3e-47f7-a1b3-c6c1f80a62f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/delivery-lanches.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/delivery-lanches.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentos/ReuniãoClienteES.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/clientes.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/clientes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/vendas.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/vendas.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/clientes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/clientes_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/produtos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/produtos_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/vendas_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/vendas_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/clientes_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/cliente.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cliente.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/produto.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/produto.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/venda.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/venda.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/_cliente.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/clientes/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/_produto.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/_venda.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/vendas/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/vendas/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/vendas/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/vendas/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cable.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/cable.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/secrets.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/secrets.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190522195359_create_produtos.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190522204624_create_clientes.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190526203409_create_vendas.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryLanches/app/views/menu_principal/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryLanches/hellocucumber/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryLanches/hellocucumber/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryLanches/hellocucumber/features/crud_produtos.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryLanches/hellocucumber/features/crud_vendas.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryLanches/hellocucumber/features/step_definitions/stepdefs.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryLanches/hellocucumber/features/support/env.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/clientes_controller_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/produtos_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/produtos_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/vendas_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/vendas_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/clientes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/clientes.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/produtos.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/produtos.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/vendas.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/vendas.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/clientes_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/produtos_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/vendas_test.rb" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/tmp/cache/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,39 +104,30 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="development" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="produtos: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="development" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="vendas: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/vendas_controller.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/vendas/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/venda.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/produto.rb">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="60">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -78,11 +137,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/controllers/vendas_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/produtos/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/venda.rb" />
+        <option value="$PROJECT_DIR$/app/models/produto.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/produtos_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190522195359_create_produtos.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-1" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,18 +177,6 @@
               <item name="delivery-lanches" type="b2602c69:ProjectViewProjectNode" />
               <item name="delivery-lanches" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery-lanches" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery-lanches" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery-lanches" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery-lanches" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -118,28 +184,27 @@
               <item name="delivery-lanches" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="vendas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery-lanches" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery-lanches" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery-lanches" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery-lanches" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
+              <item name="welcome" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.settings.patched" value="true" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="rails db:migrate RAILS_ENV=development" />
+      <command value="rails db:migrate" />
+      <command value="rails server" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -158,49 +223,121 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="405fa7f6-7e3e-47f7-a1b3-c6c1f80a62f8" name="Default Changelist" comment="" />
+      <created>1558908639259</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558908639259</updated>
+      <workItem from="1558908644180" duration="602000" />
+      <workItem from="1558911592742" duration="2561000" />
+      <workItem from="1558995654989" duration="157000" />
+    </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172000" />
+    <option name="totallyTimeSpent" value="3492000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="25" width="1881" height="1055" extended-state="6" />
+    <frame x="0" y="-1" width="1366" height="728" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986361" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32925472" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6327586" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" weight="0.32951444" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32925472" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3287879" />
     </layout>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/venda.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/vendas/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/vendas/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="420">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/df4f22a2-1bb2-4988-87c6-0d9cd4983994/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/vendas/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/produto.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="88" lean-forward="true" selection-start-line="3" selection-start-column="88" selection-end-line="3" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190526203409_create_vendas.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190522204624_create_clientes.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190522195359_create_produtos.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/produtos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/produtos/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/venda.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/vendas_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,27 @@
+<h1>Lista de Produtos</h1>
+<td><%= link_to 'Tela Inicial', welcome_index_path %></td>
+<p></p>
+<%= link_to 'Novo Produto', new_produto_path %>
+<p></p>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Descricao</th>
+    <th>Preco</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @produto.each do |produto| %>
+    <tr>
+      <td><%= produto.id %></td>
+      <td><%= produto.descricao %></td>
+      <td><%= produto.preco %></td>
+      <td><%= link_to 'Exibir', produto_path(produto) %></td>
+      <td><%= link_to 'Editar', edit_produto_path(produto) %></td>
+      <td><%= link_to 'Excluir', produto_path(produto),
+                      method: :delete,
+                      data: { confirm: 'Tem certeza?' } %></td>
+    </tr>
+  <% end %>
+</table>

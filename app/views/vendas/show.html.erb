@@ -1,24 +1,28 @@
-<p id="notice"><%= notice %></p>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Produto</th>
+    <th>Cliente</th>
+    <th>Quantidade</th>
+    <th>Total</th>
+    <th colspan="2"></th>
+  </tr>
+  <tr>
+    <td><%= @venda.id %></td>
+    <%Produto.all.each do |p| %>
+      <% if p.id === @venda.produto_id %>
+        <td><%= p.descricao %></td>
+      <%end%>
+    <% end %>
+    <%Cliente.all.each do |c| %>
+      <% if c.id === @venda.cliente_id %>
+        <td><%= c.nome %></td>
+      <%end%>
+    <% end %>
+    <td><%= @venda.quantidade %></td>
+    <td><%= "R$ " <<@venda.total.to_s %></td>
+  </tr>
+</table>
 
-<p>
-  <strong>Produto:</strong>
-  <%= @venda.produto %>
-</p>
-
-<p>
-  <strong>Cliente:</strong>
-  <%= @venda.cliente %>
-</p>
-
-<p>
-  <strong>Quantidade:</strong>
-  <%= @venda.quantidade %>
-</p>
-
-<p>
-  <strong>Valortotal:</strong>
-  <%= @venda.valorTotal %>
-</p>
-
-<%= link_to 'Edit', edit_venda_path(@venda) %> |
-<%= link_to 'Back', vendas_path %>
+<%= link_to 'Editar', edit_venda_path(@venda) %> |
+<%= link_to 'Voltar', vendas_path %>

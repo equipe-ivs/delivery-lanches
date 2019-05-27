@@ -1,0 +1,41 @@
+<%= form_with model: @cliente, local: true do |form| %>
+
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@cliente.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @cliente.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :Nome %><br>
+    <%= form.text_field :nome %>
+  </p>
+
+  <p>
+    <%= form.label :Cpf %><br>
+    <%= form.text_field :cpf %>
+  </p>
+
+  <p>
+    <%= form.label :Endereco %><br>
+    <%= form.text_field :endereco %>
+  </p>
+
+  <p>
+    <%= form.label :Telefone %><br>
+    <%= form.text_field :telefone %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
