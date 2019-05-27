@@ -1,9 +1,9 @@
 Given("Eu estou na pagina de criar um novo produto") do
-  visit 'produtos/new'
+  visit 'http://localhost:3000/produtos/new'
   expect(page).to have_current_path('/produtos/new')
 end
 
-When("Eu crio o produto de id {int}, de descricao {string} e preco {float}") do |int, string, int2|
+When("Eu crio o produto de id {int}, de descricao {string} e preco {float}") do |int, string, float|
   fill_in 'produtos[id]', :with => int
   fill_in 'produtos[descricao]', :with => string
   fill_in 'produtos[preco]', :with => float
