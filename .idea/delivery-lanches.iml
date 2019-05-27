@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<module version="4">
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+=======
 <module type="RUBY_MODULE" version="4">
   <component name="ModuleRunConfigurationManager">
     <shared />
@@ -80,4 +86,5 @@
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.3, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, RVM: ruby-2.3.3) [gem]" level="application" />
   </component>
+>>>>>>> remotes/repositoriop/master
 </module>
