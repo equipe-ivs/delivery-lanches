@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 1
-  quantidade: 1
-  valorTotal: 9.99
+  produto: MyString
+  cliente: MyString
+  quantidade: MyString
+  valorTotal: MyString
 
 two:
-  id: 1
-  quantidade: 1
-  valorTotal: 9.99
+  produto: MyString
+  cliente: MyString
+  quantidade: MyString
+  valorTotal: MyString
