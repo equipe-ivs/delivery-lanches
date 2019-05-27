@@ -1,0 +1,33 @@
+<h1>Lista de Clientes</h1>
+<td><%= link_to 'Tela Inicial', welcome_index_path %></td>
+<p></p>
+<%= link_to 'Novo Cliente', new_cliente_path %>
+<p></p>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Cpf</th>
+    <th>Endereco</th>
+    <th>Telefone</th>
+
+    <th colspan="2"></th>
+  </tr>
+
+  <% @cliente.each do |cliente| %>
+    <tr>
+      <td><%= cliente.id %></td>
+      <td><%= cliente.nome %></td>
+      <td><%= cliente.cpf %></td>
+      <td><%= cliente.endereco %></td>
+      <td><%= cliente.telefone %></td>
+
+      <td><%= link_to 'Exibir', cliente_path(cliente) %></td>
+      <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
+      <td><%= link_to 'Excluir', cliente_path(cliente),
+                      method: :delete,
+                      data: { confirm: 'Tem certeza?' } %></td>
+    </tr>
+  <% end %>
+</table>
