@@ -1,11 +1,11 @@
 Given("Eu estou na pagina de criar um novo produto") do
   visit 'http://localhost:3000/produtos/new'
-  expect(page).to have_current_path('/produtos/new')
+  expect(page).to have_content('Novo Produto')
 end
 
-When("Eu crio o produto de descricao {string} e preco {float}") do |string, float|
-  fill_in 'produtos[descricao]', :with => string
-  fill_in 'produtos[preco]', :with => float
+When("Eu crio o produto de descricao {string} e preco {int}") do |string, int|
+  fill_in 'produto[descricao]', :with => string
+  fill_in 'produto[preco]', :with => int
 end
 
 When("Clico em criar produto") do
@@ -13,13 +13,14 @@ When("Clico em criar produto") do
 end
 
 Then("Eu vejo que o produto de descricao {string} foi salvo") do |string|
-  click_button 'Create Produto'
-end
-
-Then("Eu vejo que o produto de id {int} e de descricao {string} foi salvo") do |int, string|
-  expect(page).to have_content(int)
   expect(page).to have_content(string)
-  expect(page).to have_current_path(produtos_path + '/' + Produtos.last.id.to_s)
 end
 
-#
+Then("Eu vejo a mensagem de erro {string}") do |string|
+  expect(page).to have_content(string)
+end
+
+When("Eu crio o produto de descricao {string} e preco {string}") do |string, string2|
+  fill_in 'produto[descricao]', :with => string
+  fill_in 'produto[preco]', :with => string2
+end
