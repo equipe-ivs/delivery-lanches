@@ -2,12 +2,8 @@
 
 one:
   produto_id: 1
-  cliente_id: 
   quantidade: 1
-  total: 1.5
 
 two:
   produto_id: 1
-  cliente_id: 
   quantidade: 1
-  total: 1.5

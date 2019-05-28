@@ -3,14 +3,17 @@ Given("Eu estou na pagina de criar um novo produto") do
   expect(page).to have_current_path('/produtos/new')
 end
 
-When("Eu crio o produto de id {int}, de descricao {string} e preco {float}") do |int, string, float|
-  fill_in 'produtos[id]', :with => int
+When("Eu crio o produto de descricao {string} e preco {float}") do |string, float|
   fill_in 'produtos[descricao]', :with => string
   fill_in 'produtos[preco]', :with => float
 end
 
 When("Clico em criar produto") do
-  click_button 'create produto'
+  click_button 'Create Produto'
+end
+
+Then("Eu vejo que o produto de descricao {string} foi salvo") do |string|
+  click_button 'Create Produto'
 end
 
 Then("Eu vejo que o produto de id {int} e de descricao {string} foi salvo") do |int, string|

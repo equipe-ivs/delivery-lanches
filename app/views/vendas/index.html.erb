@@ -1,33 +1,39 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Vendas</h1>
+<h1>Lista de Vendas</h1>
+<td><%= link_to 'Tela Inicial', welcome_index_path %></td>
+<p></p>
+<%= link_to 'Nova Venda', new_venda_path %>
+<p></p>
 
 <table>
-  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Produto</th>
+    <th>Cliente</th>
+    <th>Quantidade</th>
+    <th>Total</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @venda.each do |venda| %>
     <tr>
-      <th>Produto</th>
-      <th>Cliente</th>
-      <th>Quantidade</th>
-      <th>Valortotal</th>
-      <th colspan="3"></th>
+      <td><%= venda.id %></td>
+      <%Produto.all.each do |p| %>
+        <% if p.id === venda.produto_id %>
+          <td><%= p.descricao %></td>
+        <%end%>
+      <% end %>
+      <%Cliente.all.each do |c| %>
+        <% if c.id === venda.cliente_id %>
+          <td><%= c.nome %></td>
+        <%end%>
+      <% end %>
+      <td><%= venda.quantidade %></td>
+      <td><%= "R$ "<<venda.total.to_s %></td>
+      <td><%= link_to 'Exibir', venda_path(venda) %></td>
+      <td><%= link_to 'Editar', edit_venda_path(venda) %></td>
+      <td><%= link_to 'Excluir', venda_path(venda),
+                      method: :delete,
+                      data: { confirm: 'Tem certeza?' } %></td>
     </tr>
-  </thead>
-
-  <tbody>
-    <% @vendas.each do |venda| %>
-      <tr>
-        <td><%= venda.produto %></td>
-        <td><%= venda.cliente %></td>
-        <td><%= venda.quantidade %></td>
-        <td><%= venda.valorTotal %></td>
-        <td><%= link_to 'Show', venda %></td>
-        <td><%= link_to 'Edit', edit_venda_path(venda) %></td>
-        <td><%= link_to 'Destroy', venda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
+  <% end %>
 </table>
-
-<br>
-
-<%= link_to 'New Venda', new_venda_path %>
