@@ -4,27 +4,31 @@ Feature: CRUD Vendas
 	so that eu vejo que os dados foram salvos corretamente
   
 	Scenario: Criando venda corretamente
-		Given Eu estou na tela de vendas
-		And Eu clico no botao de nova venda
-		When Eu adiciona o id "ID" do produto e a quantidade "x"
-		And Eu clico no botao salvar venda
-		Then Eu vejo que a venda e criada corretamente
+		Given Eu estou na tela de nova venda
+		When Eu crio uma nova venda com o cliente 'DeliveryBot', o produto 'Misto' e quantidade 1
+		And Eu clico em criar venda
+		Then Eu vejo que o produto 'Misto' foi salvo
 
-	Scenario: Criar venda com quantidade invalida
-		Given Eu estou na tela de vendas
-		And Eu clico no botao nova venda
-		When Eu adiciona o id "ID" do produto e a quantidade com valor "x"
-		And Eu clico no botao salvar venda
-		Then Eu vejo a mensagem de erro informando que a quantidade do produto e invalida
+	Scenario: Criando venda com produto em branco
+		Given Eu estou na tela de nova venda
+		When Eu crio uma nova venda com o cliente 'DeliveryBot', o produto 'Please select' e quantidade 1
+		And Eu clico em criar venda
+		Then Eu vejo a mensagem de erro 'Produto Campo obrigatorio'
 
-	Scenario: Editar venda como campos validos
-		Given Eu estou na tela de vendas
-		And Eu clico no botao editar venda
-		When Eu altero o produto de id "id" para o id "id novo"
-		And Eu clico no bota salvar
-		Then Eu vejo que a venda e salva com as novas informacoes
+	Scenario: Criando venda sem preencher o campo de cliente
+		Given Eu estou na tela de nova venda
+		When Eu crio uma nova venda com o cliente 'Please select', o produto 'Misto' e quantidade 1
+		And Eu clico em criar venda
+		Then Eu vejo a mensagem de erro 'Cliente Campo obrigatorio'
 
-	Scenario: Deletar venda existente
-		Given Eu estou na tela de vendas
-		When Eu clico no botao destroy da venda de id "id"
-		Then Eu vejo que a venda e excluida corretamente
+  	Scenario: Criando venda com cliente em branco
+		Given Eu estou na tela de nova venda
+		When Eu crio uma nova venda com o cliente 'Please select', o produto 'Misto' e quantidade 1
+		And Eu clico em criar venda
+		Then Eu vejo a mensagem de erro 'Cliente Campo obrigatorio'
+
+	Scenario: Criando venda com cliente e produto em branco
+		Given Eu estou na tela de nova venda
+		When Eu crio uma nova venda com o cliente 'Please select', o produto 'Please select' e quantidade 1
+		And Eu clico em criar venda
+		Then Eu vejo as mensagens de erro 'Cliente Campo obrigatorio' e 'Produto Campo obrigatorio'
