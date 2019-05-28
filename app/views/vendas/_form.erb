@@ -16,7 +16,7 @@
 
   <p>
     <%= form.label :Lista_de_Clientes %>
-    <%= form.collection_select(:cliente_id, Cliente.all.all, :id, :nome, prompt: true)%>
+    <%= form.collection_select(:cliente_id, Cliente.all, :id, :nome, prompt: true)%>
   </p>
 
 
