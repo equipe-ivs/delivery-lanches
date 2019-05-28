@@ -3,5 +3,6 @@ class Venda < ApplicationRecord
   validates :cliente_id,presence: false,numericality: {message: "Campo obrigatorio"}
   validates :quantidade,presence: true,numericality: {message: "Campo obrigatorio"}
   validates :total,presence: true,numericality: {message: "Campo obrigatorio"}
-  has_many :produtos
+  belongs_to :cliente
+  has_one :produto
 end

@@ -47,7 +47,7 @@ class VendasController < ApplicationController
 
   private
   def venda_params
-    params.require(:venda).permit(:produto_id,:cliente_id,:quantidade,:total,{:produtos => []})
+    params.require(:venda).permit(:produto_id,:cliente_id,:quantidade,:total)
   end
 
   def calcularTotal
