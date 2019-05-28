@@ -1,5 +1,5 @@
 Given("Eu estou na pagina de criar um novo produto") do
-  visit 'http://localhost:3000/produtos/new'
+  visit 'produtos/new'
   expect(page).to have_current_path('/produtos/new')
 end
 
