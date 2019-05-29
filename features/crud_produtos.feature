@@ -5,9 +5,9 @@ Feature: CRUD Produtos
 
 	Scenario: Criar um produto corretamente
 		Given Eu estou na pagina de criar um novo produto
-		When Eu crio o produto de descricao 'Banana' e preco 2
+		When Eu crio o produto de descricao 'Misto' e preco 2
 		And Clico em criar produto
-		Then Eu vejo que o produto de descricao 'Banana' foi salvo
+		Then Eu vejo que o produto de descricao 'Misto' foi salvo
 
 	Scenario: Criar um produto com descricao em branco
 		Given Eu estou na pagina de criar um novo produto
