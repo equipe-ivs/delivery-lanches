@@ -34,10 +34,10 @@ Given("Eu estou na tela de nova venda") do
   expect(page).to have_content('Nova Venda')
 end
 
-When("Eu crio uma nova venda com o cliente {string}, o produto {string} e quantidade {int}") do |string, string2, int|
-  select string, :from => "venda[cliente_id]"
-  select string2, :from => "venda[produto_id]"
-  select int, :from => "venda[quantidade]"
+When("Eu crio uma nova venda com o cliente {string}, o produto {string} e quantidade {int}") do |cliente,produto, quantidade|
+  select cliente, :from => "venda[cliente_id]"
+  select produto, :from => "venda[produto_id]"
+  select quantidade, :from => "venda[quantidade]"
 end
 
 When("Eu clico em criar venda") do
