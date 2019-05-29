@@ -11,6 +11,9 @@
  
  
 ### Instrucões para realização dos testes
++ Passo 1:
+> Executar o comando "rails db:migrate RAILS_ENV=development" para criar
+as tabelas no banco de dados
 
 + Passo 1:
 > Instalar as gems presentes no arquivo __Gemfile__ na raiz do projeto
