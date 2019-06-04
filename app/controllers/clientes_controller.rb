@@ -43,6 +43,9 @@ class ClientesController < ApplicationController
   end
   private
   def cliente_params
-    params.require(:cliente).permit(:nome, :cpf,:endereco,:telefone)
+    params.require(:cliente).permit(:nome, :cpf,endereco_params,:telefone)
+  end
+  def endereco_params
+    params.require(:endereco).permit(:rua, :numero,:bairro,:cidade)
   end
 end

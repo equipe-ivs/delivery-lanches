@@ -21,7 +21,11 @@
       <td><%= cliente.id %></td>
       <td><%= cliente.nome %></td>
       <td><%= cliente.cpf %></td>
-      <td><%= cliente.endereco %></td>
+      <% Endereco.all.each do |endereco|%>
+        <% if endereco.id === cliente.endereco_id %>
+          <td><%= endereco.to_s %></td>
+          <% end %>
+      <% end %>
       <td><%= cliente.telefone %></td>
 
       <td><%= link_to 'Exibir', cliente_path(cliente) %></td>
