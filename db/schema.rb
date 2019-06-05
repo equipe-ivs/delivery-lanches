@@ -30,6 +30,14 @@ ActiveRecord::Schema.define(version: 20190604225849) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "funcionarios", force: :cascade do |t|
+    t.string "nome"
+    t.string "cpf"
+    t.string "senha"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "produto_estoques", force: :cascade do |t|
     t.string "descricao"
     t.float "preco_compra"
