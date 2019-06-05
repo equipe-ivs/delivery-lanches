@@ -11,15 +11,18 @@
  
  
 ### Instrucões para realização dos testes
-
 + Passo 1:
 > Instalar as gems presentes no arquivo __Gemfile__ na raiz do projeto
 
 + Passo 2:
+> Executar o comando "rails db:migrate RAILS_ENV=development" para criar
+as tabelas no banco de dados
+
++ Passo 3:
 
 > Ter o __firefox 67.0(64 bits)__ ![img1](https://lh3.googleusercontent.com/--5JJ8DFp0h0/XO3azvknCaI/AAAAAAAAEd4/fOCdP6wKJnILTh8oh31XBDeyIB_JGnMzwCK8BGAs/s0/imagem5.png)
 
-+ Passo 3:
++ Passo 4:
   > Cadastrar cliente com os seguintes parametros:  
     Nome: DeliveryBot  
     Cpf: 11 caracteres numéricos(00000000000)  

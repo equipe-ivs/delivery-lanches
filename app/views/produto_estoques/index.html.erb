@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Produto Estoques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descricao</th>
+      <th>Preco compra</th>
+      <th>Quantidade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @produto_estoques.each do |produto_estoque| %>
+      <tr>
+        <td><%= produto_estoque.descricao %></td>
+        <td><%= produto_estoque.preco_compra %></td>
+        <td><%= produto_estoque.quantidade %></td>
+        <td><%= link_to 'Show', produto_estoque %></td>
+        <td><%= link_to 'Edit', edit_produto_estoque_path(produto_estoque) %></td>
+        <td><%= link_to 'Destroy', produto_estoque, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Produto Estoque', new_produto_estoque_path %>

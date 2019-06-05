@@ -1,11 +1,13 @@
-<h1>Lista de Vendas</h1>
-<td><%= link_to 'Tela Inicial', welcome_index_path %></td>
-<p></p>
-<%= link_to 'Nova Venda', new_venda_path %>
-<p></p>
+<h1 align="center">Opções</h1>
+<td><p align="center"><%= link_to 'Tela Inicial', welcome_index_path %></p></td>
+<p align="center"><%= link_to 'Nova Venda', new_venda_path %></p>
+<h1 align="center">Lista de Vendas</h1>
 
-<table>
-  <tr>
+
+<p align="center"></p>
+
+<table align="center">
+  <tr align="center">
     <th>ID</th>
     <th>Produto</th>
     <th>Cliente</th>
@@ -27,7 +29,7 @@
           <td><%= c.nome %></td>
         <%end%>
       <% end %>
-      <td><%= venda.quantidade %></td>
+      <td align="center"><%= venda.quantidade %></td>
       <td><%= "R$ "<<venda.total.to_s %></td>
       <td><%= link_to 'Exibir', venda_path(venda) %></td>
       <td><%= link_to 'Editar', edit_venda_path(venda) %></td>

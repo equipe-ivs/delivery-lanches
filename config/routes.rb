@@ -18,8 +18,16 @@ Rails.application.routes.draw do
 
   get "welcome/index"
 
+  resources :produto_estoques
+
+  resources :funcionarios
+
   resources :produtos
-  resources :vendas
+
+  resources :vendas do
+    resources :produtos
+  end
+
   resources :clientes
 
   root "welcome#index"
