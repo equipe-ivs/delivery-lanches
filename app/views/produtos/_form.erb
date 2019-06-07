@@ -3,8 +3,7 @@
   <% if @produto.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@produto.errors.count, "error") %> prohibited
-        this article from being saved:
+        <%= pluralize(@produto.errors.count, "error") %> proibiram este produto ser salvo:
       </h2>
       <ul>
         <% @produto.errors.full_messages.each do |msg| %>

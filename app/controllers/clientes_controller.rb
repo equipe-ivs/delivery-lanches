@@ -10,6 +10,7 @@ class ClientesController < ApplicationController
 
   def create
     @cliente = Cliente.new(cliente_params)
+    @cliente.endereco_id = Endereco.all.last.id
     if @cliente.save
       redirect_to @cliente
     else
@@ -29,7 +30,7 @@ class ClientesController < ApplicationController
     @cliente = Cliente.find(params[:id])
 
     if @cliente.update(cliente_params)
-      redirect_to @cliente
+      redirect_to edit_endereco_path(Endereco.find_by_id(@cliente.endereco_id))
     else
       render 'edit'
     end
@@ -37,15 +38,14 @@ class ClientesController < ApplicationController
 
   def destroy
     @cliente = Cliente.find(params[:id])
+    @endereco = Endereco.find_by_id(@cliente.endereco_id)
+    @endereco.destroy
     @cliente.destroy
 
     redirect_to clientes_path
   end
   private
   def cliente_params
-    params.require(:cliente).permit(:nome, :cpf,endereco_params,:telefone)
-  end
-  def endereco_params
-    params.require(:endereco).permit(:rua, :numero,:bairro,:cidade)
+    params.require(:cliente).permit(:nome, :cpf,:telefone)
   end
 end
