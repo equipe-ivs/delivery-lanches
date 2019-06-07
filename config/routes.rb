@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :enderecos
   get 'venda_join_produto/index'
 
   get 'venda_join_produto/new'
