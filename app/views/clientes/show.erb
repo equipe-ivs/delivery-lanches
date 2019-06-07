@@ -14,12 +14,7 @@
 </p>
 
 <p>
-  <strong>Endereco: </strong>
-  <% Endereco.all.each do |endereco|%>
-    <% if endereco.id === cliente.endereco_id %>
-    <p><%= endereco.to_s %></p>
-  <% end %>
-<% end %>
+  <strong>Endereco: <%= Endereco.find_by_id(@cliente.endereco_id).to_s%></strong>
 </p>
 
 <p>
