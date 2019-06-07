@@ -12,7 +12,9 @@
  
 ### Instrucões para realização dos testes
 + Passo 1:
-> Instalar as gems presentes no arquivo __Gemfile__ na raiz do projeto
+> Instalar as gems presentes no arquivo __Gemfile__ na raiz do projeto  
+  Caso a gem geckodriver-helper não seja intalada altomaticamente, execute
+  no terminal o commando: __sudo gem install geckodriver-helper__  
 
 + Passo 2:
 > Executar o comando "rails db:migrate RAILS_ENV=development" para criar
