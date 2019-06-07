@@ -3,8 +3,7 @@
   <% if @cliente.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@cliente.errors.count, "error") %> prohibited
-        this article from being saved:
+        <%= pluralize(@cliente.errors.count, "error") %> proibiram este artigo de ser salvo:
       </h2>
       <ul>
         <% @cliente.errors.full_messages.each do |msg| %>
@@ -25,20 +24,12 @@
   </p>
 
   <p>
-    <%= form.label :Endereco %><br>
-    <%= form.text_field :rua %>
-    <%= form.text_field :numero %>
-    <%= form.text_field :bairro %>
-    <%= form.text_field :cidade %>
-  </p>
-
-  <p>
     <%= form.label :Telefone %><br>
     <%= form.text_field :telefone %>
   </p>
 
   <p>
-    <%= form.submit %>
+    <%= form.submit 'Salvar Cliente'%>
   </p>
 
 <% end %>

@@ -1,6 +1,6 @@
 <h1 align="center">Opções</h1>
 <p align="center"><td><%= link_to 'Tela Inicial', welcome_index_path %></td></p>
-<p align="center"><%= link_to 'Novo Cliente', new_cliente_path %></p>
+<p align="center"><%= link_to 'Novo Cliente', new_endereco_path %></p>
 <p><h1 align="center">Lista de Clientes</h1></p>
 
 
@@ -21,11 +21,7 @@
       <td><%= cliente.id %></td>
       <td><%= cliente.nome %></td>
       <td><%= cliente.cpf %></td>
-      <% Endereco.all.each do |endereco|%>
-        <% if endereco.id === cliente.endereco_id %>
-          <td><%= endereco.to_s %></td>
-          <% end %>
-      <% end %>
+      <td><%= Endereco.find_by_id(cliente.endereco_id).to_s%></td>
       <td><%= cliente.telefone %></td>
 
       <td><%= link_to 'Exibir', cliente_path(cliente) %></td>

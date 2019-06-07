@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
+<p align="center"><td><%= link_to 'Tela Inicial', welcome_index_path %></td></p>
+<%= link_to 'Novo Funcionario', new_funcionario_path %>
 
-<h1>Funcionarios</h1>
+<h1 align="center">Lista de Funcionarios</h1>
 
-<table>
+<table align="center">
   <thead>
     <tr>
       <th>Nome</th>
@@ -27,5 +29,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Funcionario', new_funcionario_path %>

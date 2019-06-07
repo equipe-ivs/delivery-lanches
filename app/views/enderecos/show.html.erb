@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rua:</strong>
+  <%= @endereco.rua %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @endereco.numero %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @endereco.bairro %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @endereco.cidade %>
+</p>
+
+<%= link_to 'Editar', edit_endereco_path(@endereco) %> |
+<%= link_to 'Voltar', clientes_path %>

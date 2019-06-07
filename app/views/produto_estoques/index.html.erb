@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Produto Estoques</h1>
+<p align="center"><td><%= link_to 'Tela Inicial', welcome_index_path %></td></p>
+<p align="center"><%= link_to 'Novo Produto Estoque', new_produto_estoque_path %></p>
+<p><h1 align="center">Lista de Produto em Estoque</h1></p>
 
 <table>
   <thead>
@@ -18,14 +19,12 @@
         <td><%= produto_estoque.descricao %></td>
         <td><%= produto_estoque.preco_compra %></td>
         <td><%= produto_estoque.quantidade %></td>
-        <td><%= link_to 'Show', produto_estoque %></td>
-        <td><%= link_to 'Edit', edit_produto_estoque_path(produto_estoque) %></td>
-        <td><%= link_to 'Destroy', produto_estoque, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Exibir', produto_estoque %></td>
+        <td><%= link_to 'Editar', edit_produto_estoque_path(produto_estoque) %></td>
+        <td><%= link_to 'Excluir', produto_estoque, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Produto Estoque', new_produto_estoque_path %>
