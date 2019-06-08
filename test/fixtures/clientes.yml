@@ -3,11 +3,9 @@
 one:
   nome: MyString
   cpf: MyString
-  endereco: MyString
   telefone: MyString
 
 two:
   nome: MyString
   cpf: MyString
-  endereco: MyString
   telefone: MyString
