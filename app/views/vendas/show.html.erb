@@ -9,16 +9,12 @@
   </tr>
   <tr>
     <td><%= @venda.id %></td>
-    <%Produto.all.each do |p| %>
-      <% if p.id === @venda.produto_id %>
-        <td><%= p.descricao %></td>
-      <%end%>
-    <% end %>
-    <%Cliente.all.each do |c| %>
-      <% if c.id === @venda.cliente_id %>
-        <td><%= c.nome %></td>
-      <%end%>
-    <% end %>
+    <%p = Produto.find_by_id(@venda.produto_id)%>
+    <td><%= p.descricao %></td>
+
+    <%c = Cliente.find_by_id(@venda.cliente_id) %>
+    <td><%= c.nome %></td>
+
     <td><%= @venda.quantidade %></td>
     <td><%= "R$ " <<@venda.total.to_s %></td>
   </tr>
