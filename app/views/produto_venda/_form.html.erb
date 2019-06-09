@@ -1,0 +1,12 @@
+<%= form_with(model: [ @venda, @venda.produto_vendas.build ], local: true) do |form| %>
+
+  <p>
+    <%= form.label :Lista_de_Produtos %>
+    <%= form.collection_select(:produto_id, Produto.all, :id, :descricao, prompt: true)%>
+    <%= form.label :Quantidade %>
+    <%= form.select :quantidade, (1..20) %>
+  </p>
+  <p>
+    <%= form.submit 'Adicionar'%>
+  </p>
+<% end %>

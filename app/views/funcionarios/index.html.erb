@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <p align="center"><td><%= link_to 'Tela Inicial', welcome_index_path %></td></p>
-<%= link_to 'Novo Funcionario', new_funcionario_path %>
+<p align="center"><%= link_to 'Novo Funcionario', new_funcionario_path %></p>
 
 <h1 align="center">Lista de Funcionarios</h1>
 
@@ -22,7 +22,7 @@
         <td><%= funcionario.senha %></td>
         <td><%= link_to 'Show', funcionario %></td>
         <td><%= link_to 'Edit', edit_funcionario_path(funcionario) %></td>
-        <td><%= link_to 'Destroy', funcionario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', funcionario, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>

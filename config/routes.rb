@@ -1,21 +1,6 @@
 Rails.application.routes.draw do
 
   resources :enderecos
-  get 'venda_join_produto/index'
-
-  get 'venda_join_produto/new'
-
-  get 'venda_join_produto/show'
-
-  get 'venda_join_produto/edit'
-
-  get 'vendas/index'
-
-  get 'vendas/new'
-
-  get 'vendas/edit'
-
-  get 'vendas/show'
 
   get "welcome/index"
 
@@ -26,7 +11,7 @@ Rails.application.routes.draw do
   resources :produtos
 
   resources :vendas do
-    resources :produtos
+    resources :produto_vendas,controller: 'produto_venda'
   end
 
   resources :clientes
