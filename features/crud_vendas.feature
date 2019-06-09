@@ -13,22 +13,22 @@ Feature: CRUD Vendas
 		Given Eu estou na tela de nova venda
 		When Eu crio uma nova venda com o cliente 'DeliveryBot', o produto 'Please select' e quantidade 1
 		And Eu clico em criar venda
-		Then Eu vejo a mensagem de erro 'Produto Campo obrigatorio'
+		Then Eu vejo uma mensagem de erro
 
 	Scenario: Criando venda sem preencher o campo de cliente
 		Given Eu estou na tela de nova venda
 		When Eu crio uma nova venda com o cliente 'Please select', o produto 'Misto' e quantidade 1
 		And Eu clico em criar venda
-		Then Eu vejo a mensagem de erro 'Cliente Campo obrigatorio'
+		Then Eu vejo uma mensagem de erro
 
   	Scenario: Criando venda com cliente em branco
 		Given Eu estou na tela de nova venda
 		When Eu crio uma nova venda com o cliente 'Please select', o produto 'Misto' e quantidade 1
 		And Eu clico em criar venda
-		Then Eu vejo a mensagem de erro 'Cliente Campo obrigatorio'
+		Then Eu vejo uma mensagem de erro
 
 	Scenario: Criando venda com cliente e produto em branco
 		Given Eu estou na tela de nova venda
 		When Eu crio uma nova venda com o cliente 'Please select', o produto 'Please select' e quantidade 1
 		And Eu clico em criar venda
-		Then Eu vejo as mensagens de erro 'Cliente Campo obrigatorio' e 'Produto Campo obrigatorio'
+		Then Eu vejo mensagens de erro
