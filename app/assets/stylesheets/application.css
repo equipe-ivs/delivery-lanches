@@ -13,3 +13,59 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+
+    background-color: gold;
+    background-image: url("index.jpeg");
+    background-attachment: fixed;
+    background-size: 50%
+
+ }
+ h1{
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 500%;
+ }
+
+ a:link{
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em rgb(10, 10, 7);
+    font-size: 200%;
+ }
+
+ a:visited {
+    color: green;
+ }
+
+ a:hover {
+    color: gold;
+ }
+
+ a:active {
+    color: blue;
+ }
+
+ p{
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 100%;
+ }
+
+ th{
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 100%;
+ }
+
+ td{
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 100%;
+ }
+ tr{
+     font-size: 100%;
+ }
+ table{
+     font-size: 100%;
+ }
