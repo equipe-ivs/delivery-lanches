@@ -7,7 +7,7 @@ Feature: CRUD Vendas
 		Given Eu estou na tela de nova venda
 		When Eu crio uma nova venda com o cliente 'DeliveryBot', o produto 'Misto' e quantidade 1
 		And Eu clico em criar venda
-		Then Eu vejo que o produto 'Misto' foi salvo
+		Then Eu vejo que a venda do produto 'Misto' foi salva
 
 	Scenario: Criando venda com produto em branco
 		Given Eu estou na tela de nova venda
