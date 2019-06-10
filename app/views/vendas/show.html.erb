@@ -1,28 +1,61 @@
+<% if @venda.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@venda.errors.count, "error") %> prohibited
+      this article from being saved:
+    </h2>
+    <ul>
+      <% @venda.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<h1> Venda ID: <%= @venda.id %></h1>
+<%c = Cliente.find_by_id(@venda.cliente_id) %>
+<h1>Cliente : <%= c.nome %></h1>
+
 <table>
   <tr>
-    <th>ID</th>
-    <th>Produto</th>
-    <th>Cliente</th>
-    <th>Quantidade</th>
-    <th>Total</th>
+    <th><h2>Produto</h2></th>
+    <th><h2>Quantidade</h2></th>
+    <th><h2>SubTotal</h2></th>
     <th colspan="2"></th>
   </tr>
-  <tr>
-    <td><%= @venda.id %></td>
-    <%Produto.all.each do |p| %>
-      <% if p.id === @venda.produto_id %>
-        <td><%= p.descricao %></td>
-      <%end%>
-    <% end %>
-    <%Cliente.all.each do |c| %>
-      <% if c.id === @venda.cliente_id %>
-        <td><%= c.nome %></td>
-      <%end%>
-    <% end %>
-    <td><%= @venda.quantidade %></td>
-    <td><%= "R$ " <<@venda.total.to_s %></td>
-  </tr>
-</table>
+    <% total = 0 %>
+    <% @venda.produto_vendas.each do |produto| %>
+    <tr>
+      <td><strong><%= Produto.find_by_id(produto.produto_id).descricao %></strong></td>
+      <% subtotal =  produto.quantidade*produto.preco_venda%>
+      <% total += subtotal %>
+      <td align="center"><strong><%= produto.quantidade %></strong></td>
+      <td align="center"><strong>R$: <%= subtotal %></strong></td>
+      <td align="center"><%= link_to 'Retirar Produto', [produto.venda, produto], method: :delete,xdata: { confirm: 'Tem certeza?' } %>
+      </td>
+    </tr>
+  <% end %>
 
-<%= link_to 'Editar', edit_venda_path(@venda) %> |
-<%= link_to 'Voltar', vendas_path %>
+</table>
+<h2>Total: R$ <%= total%></h2>
+<p></p>
+<h2>Adicionar Produto:</h2>
+
+<%= form_with(model: [ @venda, @venda.produto_vendas.build ], local: true) do |form| %>
+  <p>
+    <h3><%= form.label :Selecione_o_Produto %></h3>
+    <%= form.collection_select(:produto_id, Produto.all, :id, :descricao, prompt: false)%>
+    <h3><%= form.label :Quantidade %></h3>
+    <%= form.select :quantidade, (1..99) %>
+  </p>
+
+  <p><%= form.submit 'Adicionar'%></p>
+
+  <% end %>
+
+<p></p>
+
+<p>
+  <%= link_to 'Editar', edit_venda_path(@venda) %> |
+  <%= link_to 'Voltar', vendas_path %>
+</p>
