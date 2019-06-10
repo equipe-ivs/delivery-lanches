@@ -71,10 +71,10 @@ When("Eu crio o produto de descricao {string}, preco compra {string} e quantidad
   fill_in 'produto_estoque[quantidade]', :with => quantidade
 end
 
-When("Eu crio o produto de descricao {string}, preco compra {int} e quantidade {string}") do |string, int, string2|
-  fill_in 'produto_estoque[descricao]', :with => string
-  fill_in 'produto_estoque[preco_compra]', :with => int
-  fill_in 'produto_estoque[quantidade]', :with => string
+When("Eu crio o produto de descricao {string}, preco compra {int} e quantidade {string}") do |descricao, preco, quantidade|
+  fill_in 'produto_estoque[descricao]', :with => descricao
+  fill_in 'produto_estoque[preco_compra]', :with => preco
+  fill_in 'produto_estoque[quantidade]', :with => quantidade
 end
 
 When("Clico em criar produto para o estoque") do
