@@ -33,19 +33,33 @@ Given("Eu estou na tela de nova venda") do
   visit 'http://localhost:3000/vendas/new'
   expect(page).to have_content('Nova Venda')
 end
-
-When("Eu crio uma nova venda com o cliente {string}, o produto {string} e quantidade {int}") do |cliente,produto, quantidade|
+When("Eu crio uma nova venda para o cliente {string}") do |cliente|
   select cliente, :from => "venda[cliente_id]"
-  select produto, :from => "venda[produto_id]"
-  select quantidade, :from => "venda[quantidade]"
 end
 
 When("Eu clico em criar venda") do
   click_button 'Create Venda'
 end
 
-Then("Eu vejo que a venda do produto {string} foi salva") do |descricao|
-  expect(page).to have_content(descricao)
+Then("Eu vejo que a venda foi salva") do
+  expect(page).to have_content('Venda ID')
+end
+
+Given("Crio uma nova venda para o cliente {string}") do |cliente|
+  select cliente, :from => "venda[cliente_id]"
+  click_button 'Create Venda'
+end
+
+When("Eu clico em criar adicionar") do
+  click_button 'Adicionar'
+end
+
+Then("Eu vejo que os dados foram salvos") do
+  expect(page).to have_content('1')
+end
+
+When("Eu crio uma nova venda com o cliente {string}") do |cliente|
+  select cliente, :from => "venda[cliente_id]"
 end
 
 Then("Eu vejo mensagens de erro") do
