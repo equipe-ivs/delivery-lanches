@@ -13,7 +13,7 @@
 <% end %>
 
 <h1> Venda ID: <%= @venda.id %></h1>
-<%c = Cliente.find_by_id(@venda.cliente_id) %>
+<%c = Cliente.find_by_id!(@venda.cliente_id) %>
 <h1>Cliente : <%= c.nome %></h1>
 
 <table>
@@ -26,7 +26,7 @@
     <% total = 0 %>
     <% @venda.produto_vendas.each do |produto| %>
     <tr>
-      <td><strong><%= Produto.find_by_id(produto.produto_id).descricao %></strong></td>
+      <td><strong><%= Produto.find_by_id!(produto.produto_id).descricao %></strong></td>
       <% subtotal =  produto.quantidade*produto.preco_venda%>
       <% total += subtotal %>
       <td align="center"><strong><%= produto.quantidade %></strong></td>

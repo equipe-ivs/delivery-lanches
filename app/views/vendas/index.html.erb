@@ -9,9 +9,7 @@
 <table align="center">
   <tr align="center">
     <th>ID</th>
-    <th>Produto</th>
     <th>Cliente</th>
-    <th>Quantidade</th>
     <th>Total</th>
     <th colspan="2"></th>
   </tr>
@@ -19,18 +17,10 @@
   <% @venda.each do |venda| %>
     <tr>
       <td><%= venda.id %></td>
-      <%Produto.all.each do |p| %>
-        <% if p.id === venda.produto_id %>
-          <td><%= p.descricao %></td>
-        <%end%>
-      <% end %>
-      <%Cliente.all.each do |c| %>
-        <% if c.id === venda.cliente_id %>
-          <td><%= c.nome %></td>
-        <%end%>
-      <% end %>
-      <td align="center"><%= venda.quantidade %></td>
-      <td><%= "R$ "<<venda.total.to_s %></td>
+      <% c = Cliente.find_by_id(venda.cliente_id) %>
+      <td><%= c.nome %></td>
+
+      <td>R$ <%= venda.calcularTotal  %></td>
       <td><%= link_to 'Exibir', venda_path(venda) %></td>
       <td><%= link_to 'Editar', edit_venda_path(venda) %></td>
       <td><%= link_to 'Excluir', venda_path(venda),
