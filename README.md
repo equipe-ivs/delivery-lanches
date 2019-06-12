@@ -30,7 +30,7 @@ as tabelas no banco de dados
     Cpf: 11 caracteres numéricos(00000000000)  
     Endereco: palavra de no minimo 5 caracteres (Rua Teste)  
     Telefone: numérico com no minimo 9 caracteres (999999999)   
-    Estes são os passos na ordem: 
+    
     ![img2](https://lh3.googleusercontent.com/-B-sK-vdQV0E/XQBhJHRBp2I/AAAAAAAAAc8/EX5oD1E57TYqmIIyW-bdCJXoa9MZz8z3wCK8BGAs/s0/Imagem_Postar2.png)      
     ![img3](https://lh3.googleusercontent.com/-dX1vL4oUf4Y/XQBhGBIk-EI/AAAAAAAAAcw/1nxyN9cpSaQP7OFQbUiwlgYQkaehvyhiQCK8BGAs/s0/Imagem_Postar1.png)
 
