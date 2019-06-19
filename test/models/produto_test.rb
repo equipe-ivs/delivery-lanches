@@ -6,13 +6,13 @@ class ProdutoTest < ActiveSupport::TestCase
       assert produtoTeste.save, "Produto salvo."
   end
 
-  test 'Nao deve salvar um produto com preco 0.0' do
-      produtoTeste1 = Produto.new(id: 7, descricao: 'Produtinho', preco: '0.0')
-      assert_not produtoTeste1.save, "Produto nao pode ser salvo. Preco nao pode ser zero."
+  test 'Nao deve salvar um produto com descricao numerica' do
+      produtoTeste1 = Produto.new(id: 7, descricao: 10, preco: 2.0)
+      assert_not produtoTeste1.save, "Produto nao pode ser salvo. Descricao deve ser uma string."
   end
 
-  test 'Nao deve salvar um produto com id em branco' do
-      produtoTeste2 = Produto.new(id: '', descricao: 'Produtinho', preco: '10.0')
-      assert_not produtoTeste2.save, "Produto nao pode ser salvo. Id nao pode estar em branco."
+  test 'Nao deve salvar um produto com string como preco' do
+      produtoTeste2 = Produto.new(id: 9, descricao: 'Produtinho', preco: 'dois')
+      assert_not produtoTeste2.save, "Produto nao pode ser salvo. Preco deve ser numerico."
   end
 end
