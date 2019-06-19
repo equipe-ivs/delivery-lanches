@@ -8,11 +8,11 @@ class ProdutoEstoqueTest < ActiveSupport::TestCase
 
   test 'Nao deve salvar um produto no estoque com quantidade invalida' do
       estoqueTeste1 = ProdutoEstoque.new(descricao: 'EstoqueTest', preco_compra: 2.0, quantidade: 'cem')
-      assert estoqueTeste1.save, "Produto nao pode ser salvo. Quantidade tem que ser em numero."
+      assert_not estoqueTeste1.save, "Produto nao pode ser salvo. Quantidade tem que ser em numero."
   end
 
   test 'Nao deve salvar um produto no estoque com preco invalido' do
       estoqueTeste2 = ProdutoEstoque.new(descricao: 'EstoqueTest', preco_compra: 'dois mil', quantidade: 1)
-      assert estoqueTeste2.save, "Produto nao pode ser salvo. Preco deve ser em numero."
+      assert_not estoqueTeste2.save, "Produto nao pode ser salvo. Preco deve ser em numero."
   end
 end
