@@ -10,7 +10,6 @@ class VendasController < ApplicationController
 
   def create
     @venda = Venda.new(venda_params)
-    @venda.total = calcularTotal
     if @venda.save
       redirect_to @venda
     else
@@ -48,15 +47,5 @@ class VendasController < ApplicationController
   private
   def venda_params
     params.require(:venda).permit(:produto_id,:cliente_id,:quantidade,:total)
-  end
-
-  def calcularTotal
-    Produto.all.each do |p|
-      if p.id === @venda.produto_id
-        @venda.total = p.preco*@venda.quantidade
-        break
-      end
-    end
-    @venda.total
   end
 end
