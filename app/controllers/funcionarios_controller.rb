@@ -25,30 +25,13 @@ class FuncionariosController < ApplicationController
   # POST /funcionarios.json
   def create
     @funcionario = Funcionario.new(funcionario_params)
-
-    respond_to do |format|
-      if @funcionario.save
-        format.html { redirect_to @funcionario, notice: 'Funcionario was successfully created.' }
-        format.json { render :show, status: :created, location: @funcionario }
-      else
-        format.html { render :new }
-        format.json { render json: @funcionario.errors, status: :unprocessable_entity }
-      end
-    end
+    crup(@funcionario, @funcionario.save, :created, :new)
   end
 
   # PATCH/PUT /funcionarios/1
   # PATCH/PUT /funcionarios/1.json
   def update
-    respond_to do |format|
-      if @funcionario.update(funcionario_params)
-        format.html { redirect_to @funcionario, notice: 'Funcionario was successfully updated.' }
-        format.json { render :show, status: :ok, location: @funcionario }
-      else
-        format.html { render :edit }
-        format.json { render json: @funcionario.errors, status: :unprocessable_entity }
-      end
-    end
+    crup(@funcionario, @funcionario.update(funcionario_params), :ok, :edit)
   end
 
   # DELETE /funcionarios/1

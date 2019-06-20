@@ -40,15 +40,7 @@ class EnderecosController < ApplicationController
   # PATCH/PUT /enderecos/1
   # PATCH/PUT /enderecos/1.json
   def update
-    respond_to do |format|
-      if @endereco.update(endereco_params)
-        format.html { redirect_to @endereco, notice: 'Endereco was successfully updated.' }
-        format.json { render :show, status: :ok, location: @endereco }
-      else
-        format.html { render :edit }
-        format.json { render json: @endereco.errors, status: :unprocessable_entity }
-      end
-    end
+    crup(@endereco, @endereco.update(endereco_params), :ok, :edit)
   end
 
   # DELETE /enderecos/1
