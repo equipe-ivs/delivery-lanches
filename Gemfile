@@ -62,3 +62,4 @@ end
 gem 'rspec-sinatra'
 gem 'rspec'
 gem 'geckodriver-helper'
+gem 'pg'
