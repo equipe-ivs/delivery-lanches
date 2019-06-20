@@ -13,3 +13,12 @@ def crup(tipoInfo, metodoExec, estadoInfo, renderElse)
     end
   end
 end
+
+def crup2(tipoInfo, metodoExec, renderField)
+    if metodoExec
+      redirect_to tipoInfo
+    else
+      render renderField
+  end
+end
+
