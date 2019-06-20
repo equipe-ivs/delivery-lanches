@@ -8,12 +8,12 @@ class ClienteTest < ActiveSupport::TestCase
 
   test 'Nao deve salvar um cliente com todos os campos em branco' do
       clienteTeste1 = Cliente.new()
-      assert clienteTeste1.save, "Cliente com campos em branco."
+      assert_not clienteTeste1.save, "Cliente com campos em branco."
   end
 
   test 'Nao deve salvar um cliente com cpf em incorreto' do
       clienteTeste2 = Cliente.new(nome: 'Cleyton', cpf: '12345', telefone: '01253654780')
       #CPF deve ter tamanho único = 11
-      assert clienteTeste2.save, "Cliente com CPF incorreto."
+      assert_not clienteTeste2.save, "Cliente com CPF incorreto."
   end
 end
