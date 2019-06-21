@@ -1,7 +1,6 @@
 language: ruby
 rvm:
   - 2.3.3
-  - jruby
 
 script:
   - bundle exec rake db:create:all
