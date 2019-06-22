@@ -1,0 +1,17 @@
+<h1 align="center">Usuarios</h1>
+<table align="center">
+  <tr align="center">
+    <th>Email</th>
+    <th>Função</th>
+  </tr>
+  <tr  align="center">
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.role %></td>
+      </tr>
+  <% end %>
+  </tr>
+
+</table>
+<p align="center"><%= link_to 'Voltar', welcome_index_path %></p>

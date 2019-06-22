@@ -1,6 +1,8 @@
 class ProdutosController < ApplicationController
   def index
     @produto = Produto.all
+    @users = User.all
+    authorize @users
   end
 
   def new

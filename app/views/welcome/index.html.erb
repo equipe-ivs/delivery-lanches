@@ -1,8 +1,18 @@
 <h1 align="center">Delivery de Lanches</h1>
+<p id="notice" align="center"><%= notice %></p>
+<% if current_user.gerente? %>
+    <p align="center"><%= link_to 'Produtos', controller: 'produtos' %></p>
+    <p align="center"><%= link_to 'Clientes', controller: 'clientes' %></p>
+    <p align="center"><%= link_to 'Usuarios', controller: 'user' %></p>
+    <p align="center"><%= link_to 'Vendas', controller: 'vendas' %></p>
+    <p align="center"><%= link_to 'Estoque de Produtos', controller: 'produto_estoques' %></p>
+  <% else %>
+    <p align="center"><%= link_to 'Vendas', controller: 'vendas' %></p>
+<% end %>
 
-<p align="center"><%= link_to 'Produtos', controller: 'produtos' %></p>
-<p align="center"><%= link_to 'Clientes', controller: 'clientes' %></p>
-<p align="center"><%= link_to 'Funcionarios', controller: 'funcionarios' %></p>
-<p align="center"><%= link_to 'Vendas', controller: 'vendas' %></p>
-<p align="center"><%= link_to 'Estoque de Produtos', controller: 'produto_estoques' %></p>
-
+<% if user_signed_in? %>
+  <p align="center">(<%= current_user.email%>)<%= link_to 'Sair', destroy_user_session_path,method: :delete %></p>
+  <p align="center"><%= %></p>
+<% else %>
+  <p align="center"><%= link_to 'Login', new_user_session_path%></p>
+<% end %>
