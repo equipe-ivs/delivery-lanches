@@ -22,8 +22,6 @@ development:
 test:
   <<: *default
   database: db/test
-  username: saucesar
-  password: 12345678
 
 production:
   <<: *default
