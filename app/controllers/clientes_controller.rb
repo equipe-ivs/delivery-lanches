@@ -2,6 +2,8 @@ class ClientesController < ApplicationController
 
   def index
     @cliente = Cliente.all
+    @users = User.all
+    authorize @users
   end
 
   def new
