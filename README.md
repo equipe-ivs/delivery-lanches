@@ -7,7 +7,15 @@
 >            [Saú Cesar](https://github.com/saucesar)**
 > **Disciplina:** Engenharia de Software 2019.1  
 > **Professor:** [Rodrigo Andrade](https://github.com/rcaa)
- 
+
+### Usuarios padrão para acesso ao sistema
+Acesso Gerente
++ **login:** admin@admin.com **senha:** adminadmin
+
+Acesso Funcionario
+
++ **login:** user@user.com **senha:** useruser
+
 ### Instrucões para realização dos testes
 + **Passo 1:**
 Instalar as gems presentes no arquivo **Gemfile** na raiz do projeto  
