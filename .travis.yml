@@ -5,6 +5,7 @@ rvm:
 script:
   - bundle exec rake db:create:all
   - bundle exec rake db:migrate RAILS_ENV=test
+  - ruby -S bundle exec cucumber --profile default
 
 services:
   - postgresql
